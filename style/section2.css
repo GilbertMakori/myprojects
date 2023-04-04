@@ -1,0 +1,21 @@
+.container2 {
+    background-color: rgb(182, 197, 212);
+    font-family: monospace;
+    height: 45px;
+    overflow: hidden;
+}
+
+.moving-text {
+    padding-top: 10px;
+    animation: moving-text-animation 16s linear infinite;
+}
+  
+@keyframes moving-text-animation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+

@@ -1,0 +1,21 @@
+.social-media-container {
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    font-family: monospace;
+  }
+
+.social-media-container p {
+    font-size: larger;
+}
+  
+.social-media-icons img {
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+  
+.social-media-icons img:hover {
+    transform: scale(1.2);
+}

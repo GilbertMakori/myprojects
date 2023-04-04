@@ -1,0 +1,112 @@
+@media screen and (max-width: 1254px) {
+*{
+    padding: 0;
+    margin: 0;
+}
+.header nav{
+    position: relative;
+}
+.menu_icon{
+    display: block;
+}
+header {
+    font-size: 13px;
+    width: 100%;
+    
+}
+
+header .nav1_menu {
+    display: none;
+    background-color: rgb(10, 15, 65);
+    position: absolute;
+    width: 100%;
+    top: 64px;
+    padding: 10px;
+
+}
+
+.box.active {
+    
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    opacity: 0.8;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+header .nav1_menu li {
+    background: none;
+    display: block;
+}
+
+header .nav1_menu li ul {
+    background-color: rgb(17, 37, 102);
+    top: -2px;
+    left: 140px;
+    border-radius: 5px;
+
+}
+
+header .nav1_menu li ul li {
+    background: none;
+    margin: 0;
+
+}
+.container1{
+    width: 100%;
+}
+
+.container2 {
+    display: none;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+}
+
+.message {
+    top: -50px;
+    left: 50px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+.hmessage {
+    font-size: 10px;
+}
+
+.pmessage {
+    font-size: 14px;
+}
+
+#slideshow-image {
+    position: relative;
+    width: 100%;
+}
+
+.cross_image {
+    display: none;
+}
+
+}
+
+/* Styles for portrait orientation */
+@media screen and (orientation: portrait) {
+.some-element {
+    font-size: 14px;
+    padding: 10px;
+}
+}
+
+/* Styles for tablet screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.some-element {
+    font-size: 18px;
+    padding: 50px;
+}
+}
+  

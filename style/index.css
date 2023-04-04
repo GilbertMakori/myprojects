@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(26, 26, 66);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    padding-top: 10px;
+}
+
+
+header img {
+    height: 50px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 30px;
+}
+
+
+header img:hover {
+    animation: shake 0.5s;
+}
+
+.nav_menu {
+    list-style: none;
+    text-align: right;
+}
+
+.nav_menu li {
+    display: inline-block;
+    background-color: rgb(17, 37, 102);
+    margin-top: 9px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    width: 130px;
+    text-align: center;
+    font-family: monospace;
+    position: relative;
+}
+
+.nav_menu li:hover {
+    animation: shake 0.5s;
+    background-color: rgb(75, 99, 179);
+}
+
+.nav_menu li:last-child {
+    background-color: green;
+    margin-right: 10px;
+}
+
+.nav_menu li:nth-last-child(2) {
+    background-color: green;
+}
+
+.nav_menu li:last-child:hover {
+    animation: shake 0.5s;
+    background-color: rgb(83, 131, 83);
+}
+.nav_menu li:nth-last-child(2):hover {
+    animation: shake 0.5s;
+    background-color: rgb(83, 131, 83);
+}
+
+@keyframes shake {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-5px, 0);
+    }
+    50% {
+      transform: translate(0, 0);
+    }
+    75% {
+      transform: translate(5px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+
+.nav_menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.nav_menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -10px;
+}
+
+.nav_menu li ul li {
+    height: 80px;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+
+}
+
+.nav_menu li ul li:nth-last-child(2){
+    background-color: rgb(17, 37, 102);
+}
+
+.nav_menu li ul li:last-child{
+    margin-right: 0;
+    background-color:  rgb(17, 37, 102);
+}
+
+.nav_menu li:hover ul {
+    display: block;
+}
+
+.nav_menu li ul li:last-child:hover {
+    background-color: rgb(81, 99, 155);
+}
+
+.nav_menu li ul li:nth-last-child(2):hover {
+    background-color: rgb(81, 99, 155);
+}
+
+.menu_icon {
+    display: none;
+    height: 39px;
+    position: absolute;
+    left: 78%;
+    top: 15px;
+}
+
+.cross_image {
+    display: none;
+    height: 39px;
+    position: absolute;
+    left: 78%;
+    top: 15px;
+}

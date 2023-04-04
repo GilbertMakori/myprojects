@@ -1,0 +1,59 @@
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin-top: 73px;
+    height: 500px;
+    background-image: url(../image/home3\ \(1\).png);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+#logo {
+    border-radius: 10px;
+    transition: transform 0.3s;
+    margin-bottom: 10px;
+}
+#logo:hover {
+    transform: translateX(10px);
+    transform: scale(0.97);
+}
+
+.message {
+    position: absolute;
+    color: rgb(20, 24, 44);
+    height: 190px;
+    top: -100px;
+    right: 90px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-right: -45px;
+    font-weight: bold;
+}
+
+.animated-image {
+    animation-name: image-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes image-animation {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+      background-color: black;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+  .message {
+    color: rgb(35, 36, 43);
+  }
+}
